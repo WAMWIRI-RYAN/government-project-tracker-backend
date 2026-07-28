@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS counties (
+    id SERIAL PRIMARY KEY,
+    county_name VARCHAR(100) NOT NULL UNIQUE,
+    governor_name VARCHAR(150) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
